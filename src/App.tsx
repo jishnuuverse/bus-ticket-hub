@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -79,6 +78,13 @@ const AppRoutes = () => {
   );
 };
 
+// Footer component
+const Footer = () => (
+  <footer className="text-center py-4 text-gray-500 italic font-bold">
+    <p className="inline">Made by: Akshat, Alan, Jishnu, Milan</p>
+  </footer>
+);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -86,9 +92,12 @@ const App = () => (
       <Sonner />
       <UserProvider>
         <BrowserRouter>
-          <div className="relative min-h-screen">
+          <div className="relative min-h-screen flex flex-col">
             <NavigationBar />
-            <AppRoutes />
+            <div className="flex-grow">
+              <AppRoutes />
+            </div>
+            <Footer />
           </div>
         </BrowserRouter>
       </UserProvider>
