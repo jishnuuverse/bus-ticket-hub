@@ -29,12 +29,6 @@ export const NavigationBar = () => {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-2">
-            <Link to="/export">
-              <Button variant="ghost" size="sm" className="gap-1">
-                <Download className="h-4 w-4" />
-                <span>Export</span>
-              </Button>
-            </Link>
             
             {isLoggedIn && (
               <Button 

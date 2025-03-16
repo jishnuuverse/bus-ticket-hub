@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion";
-import { ExportData } from "@/components/ExportData";
 import { BlurContainer } from "@/components/ui/BlurContainer";
 
 const ExportPage = () => {
@@ -26,9 +25,6 @@ const ExportPage = () => {
         transition={{ delay: 0.3, duration: 0.5 }}
         className="w-full max-w-md"
       >
-        <BlurContainer className="w-full p-8 animate-scale-in">
-          <ExportData />
-        </BlurContainer>
       </motion.div>
     </div>
   );

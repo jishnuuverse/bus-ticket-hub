@@ -8,7 +8,6 @@ import { NavigationBar } from "@/components/NavigationBar";
 import LoginPage from "./pages/LoginPage";
 import BookingPage from "./pages/BookingPage";
 import ConfirmationPage from "./pages/ConfirmationPage";
-import ExportPage from "./pages/ExportPage";
 import NotFound from "./pages/NotFound";
 
 // Add necessary dependencies
@@ -68,10 +67,6 @@ const AppRoutes = () => {
             </ProtectedRoute>
           } 
         />
-        <Route 
-          path="/export" 
-          element={<ExportPage />} 
-        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
@@ -81,7 +76,7 @@ const AppRoutes = () => {
 // Footer component
 const Footer = () => (
   <footer className="text-center py-4 text-gray-500 italic font-bold">
-    <p className="inline">Made by: Akshat, Alan, Jishnu, Milan</p>
+    <p className="inline">Made : Akshat, Alan, Jishnu, Milan</p>
   </footer>
 );
 
