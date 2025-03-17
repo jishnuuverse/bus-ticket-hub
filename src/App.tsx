@@ -76,7 +76,7 @@ const AppRoutes = () => {
 // Footer component
 const Footer = () => (
   <footer className="text-center py-4 text-gray-500 italic font-bold">
-    <p className="inline">Made : Akshat, Alan, Jishnu, Milan</p>
+    <p className="inline">Made By: Akshat, Alan, Jishnu, Milan</p>
   </footer>
 );
 
